@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "t2n1t2xs",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "jadja"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "barcode-input"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
